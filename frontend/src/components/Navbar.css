@@ -1,0 +1,85 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.nav-logo span {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--glass);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid var(--glass-border);
+}
+
+.address {
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: var(--primary);
+}
+
+.btn-connect,
+.btn-disconnect {
+    background: none;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-connect:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-disconnect {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-disconnect:hover {
+    background: var(--accent);
+    color: white;
+}

@@ -1,0 +1,237 @@
+.page-title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.page-title span {
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    color: var(--text-dim);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.stat-hint {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+}
+
+.deposit-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.deposit-form input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    outline: none;
+}
+
+.deposit-form input:focus {
+    border-color: var(--primary);
+}
+
+.btn-primary.outline {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-primary.outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0.75rem;
+    border: 1px solid var(--glass-border);
+    transition: background 0.3s;
+}
+
+.history-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.history-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.profile-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.profile-text p {
+    color: var(--primary);
+    font-family: monospace;
+    margin-bottom: 0.5rem;
+}
+
+.btn-edit-link {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.profile-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.profile-edit-form input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: white;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-primary.mini,
+.btn-secondary.mini {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.wallet-badge {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.wallet-badge span {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.wallet-badge strong {
+    color: var(--secondary);
+    font-family: monospace;
+}
+
+.h-desc {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.h-date {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.history-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.h-time {
+    font-family: monospace;
+    font-size: 0.875rem;
+    color: var(--primary);
+}
+
+.h-penalty {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.history-section {
+    min-height: 200px;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-dim);
+    margin-top: 3rem;
+    font-style: italic;
+}
